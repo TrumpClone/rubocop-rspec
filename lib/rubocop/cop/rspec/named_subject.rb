@@ -43,7 +43,7 @@ module RuboCop
 
         def_node_matcher :rspec_block?, <<-PATTERN
           (block
-            (send nil {:it :specify :before :after :around} ...)
+            (send nil {:it :specify :context :xit :xspecify :xexample :skip} ...)
             ...)
         PATTERN
 
